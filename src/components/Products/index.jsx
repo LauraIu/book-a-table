@@ -13,6 +13,8 @@ import {
     MenuInfo
 } from "./ProductsElements.jsx";
 
+import {Button} from "../Booking/BookingElements";
+
 
 const Products = ({heading, data, text}) => {
     return (
@@ -28,6 +30,7 @@ const Products = ({heading, data, text}) => {
                             <MenuTitle>{product.name}</MenuTitle>
                             <MenuDescription>{product.description}</MenuDescription>
                             <MenuPrice>{product.price}</MenuPrice>
+                            <Button>Order</Button>
                         </MenuInfo>
                     </MenuCard>
                 );

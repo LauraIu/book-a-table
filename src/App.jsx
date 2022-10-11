@@ -17,7 +17,7 @@ function App() {
       <main>
         <Introduction />
         <Products
-          heading="The best ever pizzas"
+          heading="The best pizzas ever"
           text="TASTE THE ORIGINAL RECIEP!"
           data={productData}
         />

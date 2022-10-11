@@ -4,16 +4,21 @@ import archive2 from "..//..//IMG/MammaMia_interior.jpeg"
 
 export const IntroContainer = styled.section`
     display:flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction:column;
+    justify-content:center;
     align-items: center;
     text-align:center;
+    /* height:100vh; */
 
-    padding:4rem 2rem 2rem 2rem;
+    padding:8rem 2rem 8rem 2rem;
     margin: 0rem auto;  
     border-bottom:2px solid #fab623;
+
+
+    
 `
 export const IntroTitle = styled.h2`
+
     font-weight:600;
     font-size:1.5rem;
     font-style: italic;
@@ -24,25 +29,28 @@ export const IntroTitle = styled.h2`
 export const IntroBigTitle = styled.h1`
     font-weight:800;
     font-size:clamp(2.2rem, 2.5vw, 2rem);
-    color:#333;
-    line-height:150%;
+    color:#231913;
+    line-height:4rem;
+    margin: 4rem auto 2rem auto;
     border-bottom:3px solid red;
 `
 
 export const IntroText = styled.p`
-    width: 60vw;
+    width: 70vw;
     text-align: center;
     font-style: italic;
-    font-size:1.2rem;
+    font-size:1.5rem;
+    line-height: 3rem;
+    text-align: justify;
     padding: 2rem 0rem;
     margin-bottom: 2rem;
 
-    color:#666;
-    
-    /* background:url(${archive1});
+    color:#231913;
+   
+   
     background-position: center;
     background-size: cover;
-    background-repeat:no-repeat; */  
+    background-repeat:no-repeat; 
 `
 
 

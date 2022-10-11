@@ -1,14 +1,15 @@
 import styled from "styled-components";
-import ImgBg from "../../IMG/header_03.png";
+import ImgBg from "../../IMG/header_.jpeg";
 
 export const HeaderContainer = styled.section`
     display:flex;
     flex-direction:column;
     align-items:center;
     flex:1;
-    height:100vh; 
+    height:100vh;
 
-    box-shadow: 1px 10px 25px 1px #451300, -1px -5px 15px 5px #fafafa;
+    
+    box-shadow: 1px 10px 25px 1px #4a281a, -1px -5px 15px 5px #fafafa;
     
     background:url(${ImgBg});
     background-position: center;

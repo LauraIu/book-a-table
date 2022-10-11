@@ -13,7 +13,8 @@ root.render(
   </BrowserRouter>
 );
 
-// ReactDOM.render is not longer supported in React 18, insteed there is the createRoot method
+// ReactDOM.render is not longer supported in React 18, insteed there is the createRoot method *//
+
 
 // import React from 'react';
 // import ReactDOM from 'react-dom';

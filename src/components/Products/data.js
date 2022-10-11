@@ -23,7 +23,28 @@ export const productData = [
         img: product3,
         alt: "Pepperoni Pizza",
         name: "Pepperoni Menu",
-        description:"Beef and pork meat, paprika, chili powder + 50 dl juice",
+        description:"Beef and pork meat, paprika, chili powder, handful fresh basil + 50 dl juice",
+        price:"$21.99"
+    },
+    {
+        img: product4,
+        alt: "Meat-Lover’s Pizza",
+        name: "Meat-Lover’s Menu",
+        description:"Pepperoni, sausage, meatballs, mushrooms + 50 dl juice",
+        price:"$23.99"
+    }, 
+    {
+        img: product2,
+        alt: "Hawaiian Pizza",
+        name: "Hawaiian Menu",
+        description:"Tomato sauce, mozzarella, ham, cheese, pineapple + 50 dl juice",
+        price:"$20.99"
+    },
+    {
+        img: product3,
+        alt: "Pepperoni Pizza",
+        name: "Pepperoni Menu",
+        description:"Beef and pork meat, paprika, chili powder, handful fresh basil + 50 dl juice",
         price:"$21.99"
     },
     {
