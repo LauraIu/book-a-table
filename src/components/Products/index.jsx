@@ -18,7 +18,7 @@ import {Button} from "../Booking/BookingElements";
 
 const Products = ({heading, data, text}) => {
     return (
-        <MenuContainer>
+        <MenuContainer id="menu">
             <MenuHeading>{ heading }</MenuHeading>
             <MenuSubtitle>{ text }</MenuSubtitle>
             <MenuWrapper>

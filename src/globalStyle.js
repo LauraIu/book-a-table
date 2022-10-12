@@ -10,3 +10,4 @@ export const GlobalStyle = createGlobalStyle`
         sans-serif;
     }
 `;
+

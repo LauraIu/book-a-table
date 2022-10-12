@@ -36,7 +36,7 @@ export const IntroBigTitle = styled.h1`
 `
 
 export const IntroText = styled.p`
-    width: 70vw;
+    max-width:1024px;
     text-align: center;
     font-style: italic;
     font-size:1.5rem;

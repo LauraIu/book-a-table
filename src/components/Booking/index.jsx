@@ -42,7 +42,7 @@ const Booking = ({ setSelectedDate }) => {
   // };
 
   return (
-    <BookingContainer>
+    <BookingContainer id="booking">
       {!showForm ? (
         <SubmitButton onClick={setShowForm}>Book a Table</SubmitButton>
       ) : (

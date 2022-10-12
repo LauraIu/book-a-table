@@ -3,7 +3,7 @@ import { IntroContainer, IntroText, IntroTitle, IntroBigTitle } from "./IntroEle
 
 const Introduction = () => {
     return (
-        <IntroContainer>
+        <IntroContainer id="about">
             <IntroTitle>{ "Once upon a time..." }</IntroTitle>
             <IntroBigTitle>{ "MammaMia's short history" }</IntroBigTitle>
             <IntroText><strong>{ "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged Ipsum has been the industry's standard dummy text ever since the 1500s."}</strong></IntroText>

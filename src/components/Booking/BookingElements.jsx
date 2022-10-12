@@ -14,7 +14,7 @@ export const BookingContainer = styled.section`
 
   padding: 8rem 2rem 8rem 2rem;
   margin: 0rem auto;
-  border-bottom: 2px solid #fab623;
+  border-bottom: 1px solid #f0e3d2;
 `;
 
 export const SubmitButton = styled.button`
