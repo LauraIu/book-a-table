@@ -27,7 +27,7 @@ export const MenuSubtitle = styled.p`
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.25rem;
-  color: #231913;
+  color: #170f0b;
 `;
 
 export const MenuWrapper = styled.div`
@@ -71,9 +71,7 @@ export const MenuInfo = styled.div`
 
   color: #fab623;
   border-top: 6px double #fab623;
-  background: #231913;
-
-  /* border-radius: 2px; */
+  background: #170f0b;
 
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -82,8 +80,8 @@ export const MenuInfo = styled.div`
     border: 1px solid #fab623;
   }
   &:hover {
-    color: #231913;
-    border-top: 6px double #231913;
+    color: #170f0b;
+    border-top: 6px double #170f0b;
     background-color: #fab623;
   }
 `;

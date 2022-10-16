@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Link as LinkScroll } from "react-scroll";
+import { Link as LinkScroll } from "react-scroll/modules";
 
 export const FooterContainer = styled.div`
-  background-color: #231913;
+  background-color: #170f0b;
 `;
 
 export const FooterWrap = styled.div`
@@ -11,7 +11,7 @@ export const FooterWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1024px;
+  max-width: 1100px;
   margin: 0 auto;
 `;
 
@@ -27,6 +27,7 @@ export const FooterLinksContainer = styled.div`
 export const FooterLinksWrapper = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   /* @media screen and (max-width: 820px) {
     
@@ -36,11 +37,11 @@ export const FooterLinksWrapper = styled.div`
 export const FooterLinksItems = styled.div`
   display: flex;
   flex-direction: column;
-  
-  align-items: flex-end;
+
+  align-items: center;
   margin: 16px;
   text-align: center;
-  width: 160px;
+  width: 200px;
   box-sizing: border-box;
   color: #fff;
 
@@ -51,54 +52,63 @@ export const FooterLinksItems = styled.div`
   }
 `;
 
-// export const FooterLinkTitle = styled.h1`
-//   font-size: 14px;
-//   margin-bottom: 16px;
-// `;
 
 export const Logo = styled(LinkScroll)`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   color: red;
-  justify-self: start;
   cursor: pointer;
   text-decoration: none;
   font-size: 3rem;
-  display: flex;
-  align-items: center; 
-  
-  font-weight: bold;
+
+  font-weight: 800;
+
+  &:hover {
+    text-decoration: none;
+    color: red;
+  }
 `;
 
 export const Subtitle = styled.h3`
-justify-self: center;
+  justify-self: center;
   cursor: pointer;
-    font-size:1.2rem;
-    font-weight: 400;
-    letter-spacing: 0.5rem;
-    color: #fab623; 
-    margin-top:0; 
-    margin-bottom:1rem; 
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  color: #fab623;
+  margin-top: 0;
+  margin-bottom: 1rem;
 `;
 
 export const Text = styled.p`
-justify-self: center;
+  justify-self: center;
   cursor: pointer;
-    margin-bottom:2.5rem;
-    font-size: 0.8rem;
-    font-weight: 800;
-    letter-spacing: 0.5rem;
-    color: #fab623; 
+  margin-bottom: 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.5rem;
+  color: #fab623;
 `;
 
 export const FooterLink = styled(LinkScroll)`
   color: #f0e3d2;
   text-decoration: none;
   margin-bottom: 0.5rem;
-  font-weight:700;
+  font-weight: 700;
   font-size: 1.2rem;
+  cursor: pointer;
+
+  &.active {
+    font-weight:700;
+    color: #fab623;
+  }
 
   &:hover {
     color: #fab623;
     transition: 0.3s ease-out;
+    text-decoration: none;
   }
 `;
 
@@ -111,7 +121,7 @@ export const SocialMediaWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   /* max-width: 1024px; */
   margin: 40px auto 0 auto;
 
@@ -120,11 +130,9 @@ export const SocialMediaWrap = styled.div`
   } */
 `;
 
-
-
 export const WebsiteRights = styled.small`
   color: #f0e3d2;
-  margin-bottom: 16px;
+  margin: 32px auto;
 `;
 
 export const SocialIcons = styled.div`

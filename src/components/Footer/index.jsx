@@ -1,5 +1,6 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
+import { SubmitButton } from "../Booking/BookingElements";
 import {
   FaFacebook,
   FaInstagram,
@@ -31,104 +32,96 @@ const Footer = () => {
   };
 
   return (
-    /* set the icons color */
-    // <IconContext.Provider value={{ color: "#f9f9f9"}}>
-    <FooterContainer id="footer">
-      <FooterWrap>
-        <FooterLinksContainer>
-          <FooterLinksWrapper>
-            <Logo to="/" onClick={toggleHome}>
-              MammaMia
-            </Logo>
-            <Subtitle>{"ITALIAN PIZZERIA"}</Subtitle>
-            <Text>{"SINCE 1966"}</Text>
-            <WebsiteRights>
-              MammaMia&copy; {new Date().getFullYear()} All rights reserved.
-            </WebsiteRights>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
+      /* set the icons color */
+      // <IconContext.Provider value={{ color: "#f9f9f9"}}>
+      // </IconContext.Provider>
+      <FooterContainer id="footer">
+        <FooterWrap>
+          <FooterLinksContainer>
             <FooterLinksItems>
-              <FooterLink
-                to="home"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={0}
-              >
-                Home
-              </FooterLink>
-              <FooterLink
-                to="about"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={0}
-              >
-                About
-              </FooterLink>
+              <Logo to='home' onClick={toggleHome}>
+                MammaMia
+                <Subtitle>{"ITALIAN PIZZERIA"}</Subtitle>
+                <Text>{"SINCE 1966"}</Text>
+              </Logo>
             </FooterLinksItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinksItems>
-              <FooterLink
-                to="menu"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={0}
-              >
-                Menus
-              </FooterLink>
-              <FooterLink
-                to="booking"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={0}
-              >
-                Booking
-              </FooterLink>
-              <FooterLink
-                to="contact"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={0}
-              >
-                Contact
-              </FooterLink>
-            </FooterLinksItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
-        <SocialMedia>
-          <SocialMediaWrap>
-            <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-                <FaFacebook />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
-                <FaInstagram />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="YouTube">
-                <FaYoutube />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Twitter">
-                <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
-                <FaLinkedin />
-              </SocialIconLink>
-            </SocialIcons>
-          </SocialMediaWrap>
-        </SocialMedia>
-      </FooterWrap>
-    </FooterContainer>
-    // </IconContext.Provider>
+            <FooterLinksWrapper>
+              <FooterLinksItems>
+                <FooterLink
+                  to="home"
+                  smooth={true}
+                  // spy={true}
+                  duration={500}
+                  exact="true"
+                  offset={-100}
+                >
+                  Home
+                </FooterLink>
+                <FooterLink
+                  to="about"
+                  smooth={true}
+                  // spy={true}
+                  duration={500}
+                  exact="true"
+                  offset={-100}
+                >
+                  About
+                </FooterLink>
+                <FooterLink
+                  to="menu"
+                  smooth={true}
+                  // spy={true}
+                  duration={500}
+                  
+                  exact="true"
+                  offset={-100}
+                >
+                  Menus
+                </FooterLink>
+                <FooterLink
+                  to="booking"
+                  smooth={true}
+                  // spy={true}
+                  duration={500}
+                  exact="true"
+                  offset={-100}
+                >
+                  Booking
+                </FooterLink>
+              </FooterLinksItems>
+            </FooterLinksWrapper>
+            <FooterLinksWrapper>
+              <FooterLinksItems>
+                <SubmitButton>Send:</SubmitButton>
+              </FooterLinksItems>
+            </FooterLinksWrapper>
+          </FooterLinksContainer>
+          <SocialMedia>
+            <SocialMediaWrap>
+              <SocialIcons>
+                <SocialIconLink href="/" target="_blank" rel="noopener" aria-label="Facebook">
+                  <FaFacebook />
+                </SocialIconLink>
+                <SocialIconLink href="/" target="_blank" rel="noopener" aria-label="Instagram">
+                  <FaInstagram />
+                </SocialIconLink>
+                <SocialIconLink href="/" target="_blank" rel="noopener" aria-label="YouTube">
+                  <FaYoutube />
+                </SocialIconLink>
+                <SocialIconLink href="/" target="_blank" rel="noopener" aria-label="Twitter">
+                  <FaTwitter />
+                </SocialIconLink>
+                <SocialIconLink href="/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <FaLinkedin />
+                </SocialIconLink>
+              </SocialIcons>
+              <WebsiteRights>
+                MammaMia&copy; {new Date().getFullYear()} All rights reserved.
+              </WebsiteRights>
+            </SocialMediaWrap>
+          </SocialMedia>
+        </FooterWrap>
+      </FooterContainer>
   );
 };
 

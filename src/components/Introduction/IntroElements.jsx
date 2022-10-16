@@ -12,10 +12,7 @@ export const IntroContainer = styled.section`
 
     padding:8rem 2rem 8rem 2rem;
     margin: 0rem auto;  
-    border-bottom:2px solid #fab623;
-
-
-    
+    border-bottom:2px solid #fab623;   
 `
 export const IntroTitle = styled.h2`
 
@@ -29,7 +26,7 @@ export const IntroTitle = styled.h2`
 export const IntroBigTitle = styled.h1`
     font-weight:800;
     font-size:clamp(2.2rem, 2.5vw, 2rem);
-    color:#231913;
+    color:#170f0b;
     line-height:4rem;
     margin: 4rem auto 2rem auto;
     border-bottom:3px solid red;
@@ -45,8 +42,7 @@ export const IntroText = styled.p`
     padding: 2rem 0rem;
     margin-bottom: 2rem;
 
-    color:#231913;
-   
+    color:#170f0b;
    
     background-position: center;
     background-size: cover;

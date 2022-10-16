@@ -19,9 +19,8 @@ import {
 } from "./BookingElements";
 
 const Booking = ({ setSelectedDate }) => {
-  // const [isDisabled, setIsDisabled] = useState(true);
   const [input, setInput] = useState("");
-  const [showForm, setShowForm] = useState(false);
+  // const [showForm, setShowForm] = useState(false);
   const [submitReservation, setSubmitReservation] = useState(false);
 
   const handleChange = (e) => {
@@ -37,16 +36,13 @@ const Booking = ({ setSelectedDate }) => {
     console.log(input);
   };
 
-  // const handleCancel = () => {
-  //   setShowForm(false)
-  // };
 
   return (
     <BookingContainer id="booking">
-      {!showForm ? (
+      {/* {!showForm ? (
         <SubmitButton onClick={setShowForm}>Book a Table</SubmitButton>
-      ) : (
-        <BookingForm>
+      ) : ( */}
+        <BookingForm id="booking-form">
           {!submitReservation ? (
             <Form type="submit" onChange={handleSubmit}>
               <IntroBigTitle>{"Book your Table"}</IntroBigTitle>
@@ -128,8 +124,8 @@ const Booking = ({ setSelectedDate }) => {
           )}
           ;
         </BookingForm>
-      )}
-      ;
+      {/* )}
+      ; */}
     </BookingContainer>
   );
 };

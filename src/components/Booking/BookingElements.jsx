@@ -21,7 +21,7 @@ export const SubmitButton = styled.button`
   font-weight: 800;
   font-size: clamp(1.2rem, 2.5vw, 1rem);
   letter-spacing: 0.5px;
-  color: #000;
+  color: #170f0b;
   background: #fab623;
   border: 1px solid #f0e3d2;
   border-radius: 2px;
@@ -33,7 +33,7 @@ export const SubmitButton = styled.button`
 
   &:hover {
     color: #f0e3d2;
-    background: #231913;
+    background:#170f0b;
     border: 1px solid #fab623;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -52,8 +52,9 @@ export const Form = styled.div`
   margin-bottom: 1rem;
   border: 1px solid #f0e3d2;
 
+  /* background: #170f0bb4; */
   background: #0a0904ab;
-
+  
   /* box-shadow: 1px 10px 15px 1px #333, -1px -5px 15px 5px #fab623; */
   /* border:1px solid #fab623; */
   border-radius: 2px;
@@ -83,9 +84,9 @@ export const Input = styled.input`
   /* font-style: bold; */
   padding: 0.3rem 0.5rem;
   width: 99%;
-  color: #231913;
+  color:#170f0b;
   background-color: #f0e3d2;
-  border: 1px solid #000;
+  border: 1px solid #170f0b;
   border-radius: 2px;
 
   outline: none;
@@ -110,7 +111,7 @@ export const ReservationInfo = styled.div`
   background: #0a0904cc;
 
   border-radius: 2px;
-  border: 1px solid #fab623;
+  border: 1px solid #f0e3d2;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 `;
@@ -143,7 +144,7 @@ export const Button = styled.button`
   font-weight: 800;
   font-size: clamp(1.2rem, 2.5vw, 1rem);
   letter-spacing: 0.5px;
-  color: #231913;
+  color:#170f0b;
   background: #fab623;
   border: 1px solid #f0e3d2;
   border-radius: 2px;
@@ -155,7 +156,7 @@ export const Button = styled.button`
 
   &:hover {
     color: #f0e3d2;
-    background: #231913;
+    background:#170f0b;
     border: 1px solid #fab623;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;

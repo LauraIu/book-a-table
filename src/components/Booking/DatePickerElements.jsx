@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const DateInputButton = styled.button`
   font-weight: 800;
   font-size: 1.2rem;
-  color: #231913;
+  color: #170f0b;
   background: #f0e3d2;
-  border: 1px solid #000;
+  border: 1px solid #170f0b;
   border-radius: 2px;
   /* padding: 0.75rem 1.5rem; */
   /* margin: 1rem 1rem; */
