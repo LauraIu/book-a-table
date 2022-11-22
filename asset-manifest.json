@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/book-a-table/static/css/main.c21eb2e4.css",
-    "main.js": "/book-a-table/static/js/main.bb6a51a7.js",
+    "main.css": "/book-a-table/static/css/main.30642a71.css",
+    "main.js": "/book-a-table/static/js/main.21cc677d.js",
     "static/media/header.jpeg": "/book-a-table/static/media/header.142564bb67808588bf15.jpeg",
     "static/media/MammaMia_interior.jpeg": "/book-a-table/static/media/MammaMia_interior.d6e7c3587bb12c94e79e.jpeg",
     "static/media/MammaMia_cuisine_2.jpeg": "/book-a-table/static/media/MammaMia_cuisine_2.da4d6906be5b20ad17d8.jpeg",
@@ -15,11 +15,11 @@
     "static/media/glyphicons-halflings-regular.eot": "/book-a-table/static/media/glyphicons-halflings-regular.5be1347c682810f199c7.eot",
     "static/media/glyphicons-halflings-regular.woff2": "/book-a-table/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
     "index.html": "/book-a-table/index.html",
-    "main.c21eb2e4.css.map": "/book-a-table/static/css/main.c21eb2e4.css.map",
-    "main.bb6a51a7.js.map": "/book-a-table/static/js/main.bb6a51a7.js.map"
+    "main.30642a71.css.map": "/book-a-table/static/css/main.30642a71.css.map",
+    "main.21cc677d.js.map": "/book-a-table/static/js/main.21cc677d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c21eb2e4.css",
-    "static/js/main.bb6a51a7.js"
+    "static/css/main.30642a71.css",
+    "static/js/main.21cc677d.js"
   ]
 }
