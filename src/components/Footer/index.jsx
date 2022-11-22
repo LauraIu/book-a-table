@@ -1,6 +1,6 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { SubmitButton } from "../Booking/BookingElements";
+
 import {
   FaFacebook,
   FaInstagram,
@@ -12,7 +12,6 @@ import {
   FooterContainer,
   FooterWrap,
   FooterLinksContainer,
-  FooterLinksWrapper,
   FooterLinksItems,
   FooterLink,
   SocialMedia,
