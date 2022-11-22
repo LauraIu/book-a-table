@@ -1,8 +1,9 @@
-import * as React from "react";
+import React, { useState } from "react";
 // import { Routes, Route } from "react-router-dom";
 import { GlobalStyle } from "./globalStyle.js";
 
-import NavBar from "./components/Navbar";
+import Navbar from "./components/Navbar/index.js";
+import Sidebar from "./components/Sidebar/index.js";
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
 import Products from "./components/Products";
@@ -11,21 +12,26 @@ import Booking from "./components/Booking";
 import Footer from "./components/Footer";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <GlobalStyle />
-      <NavBar />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
       <Header />
       <Introduction />
-        <Products
-          heading="The best pizzas ever"
-          text="TASTE THE ORIGINAL RECIEP!"
-          data={productData}
-        />
-        <Booking />
-
-        <Footer />
-      
+      <Products
+        heading="The best pizzas ever"
+        text="TASTE THE ORIGINAL RECIEP!"
+        data={productData}
+      />
+      <Booking />
+      <Footer />
     </>
   );
 }

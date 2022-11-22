@@ -8,14 +8,13 @@ export const IntroContainer = styled.section`
     justify-content:center;
     align-items: center;
     text-align:center;
-    /* height:100vh; */
+    height:100vh;
 
     padding:8rem 2rem 8rem 2rem;
     margin: 0rem auto;  
     border-bottom:2px solid #fab623;   
 `
 export const IntroTitle = styled.h2`
-
     font-weight:600;
     font-size:1.5rem;
     font-style: italic;

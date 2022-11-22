@@ -17,7 +17,8 @@ export const MenuHeading = styled.h1`
   font-weight: 800;
   font-size: clamp(2.2rem, 2.5vw, 3rem);
   color: red;
-
+  
+  margin-top:4rem;
   padding: 3rem 2rem 0rem 2rem;
 `;
 

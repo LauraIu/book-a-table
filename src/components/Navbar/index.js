@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React from "react";
 // import { IconContext } from "react-icons";
 import { animateScroll as scroll } from "react-scroll/modules";
 import { FaBars } from "react-icons/fa"; /* https://react-icons.github.io/react-icons/search?q=bars*/
 import {
   Nav,
-  NavBarContainer,
+  NavbarContainer,
   NavLogo,
   Subtitle,
   Text,
@@ -15,24 +14,9 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
-} from "./NavBarElements";
+} from "./NavbarElements";
 
 const Navbar = ({ toggle}) => {
-  // Set Navbar background transparent on scroll
-  const [scrollNav, setSrollNav] = useState(false);
-
-  const changeNav = () => {
-    if (window.scrollY >= 100) {
-      setSrollNav(true);
-    } else {
-      setSrollNav(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-  }, []);
-
   // Scrolling back to top
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -43,8 +27,8 @@ const Navbar = ({ toggle}) => {
       {/* Set the icons color */}
       {/* <IconContext.Provider value={{ color: "#f9f9f9" }}>  */}
       {/* On scroll set the Nav background-color to transparent */}
-      <Nav scrollNav={scrollNav}>
-        <NavBarContainer>
+      <Nav>
+        <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
             MammaMia
           <Subtitle>{"ITALIAN PIZZERIA"}</Subtitle>
@@ -56,11 +40,11 @@ const Navbar = ({ toggle}) => {
           <NavMenu>
             <NavItem>
               <NavLinks
-                to="home"
+                to="#home"
                 smooth={true}
                 // spy={true}
                 duration={500}
-                exact="true"
+                // exact="true"
                 offset={-100}
               >
                 Home
@@ -68,23 +52,23 @@ const Navbar = ({ toggle}) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to="about"
-                smooth={true}
+                to="#about"
+                smooth
                 // spy={true}
                 duration={500}
-                exact="true"
-                offset={-100}
+                // exact="true"
+                offset={-80}
               >
                 About
               </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
-                to="menu"
-                smooth={true}
+                to="#menu"
+                smooth
                 // spy={true}
                 duration={500}
-                exact="true"
+                // exact="true"
                 offset={-100}
               >
                 Menus
@@ -92,8 +76,8 @@ const Navbar = ({ toggle}) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to="footer"
-                smooth={true}
+                to="#footer"
+                smooth
                 // spy={true}
                 duration={500}
                 exact="true"
@@ -105,17 +89,17 @@ const Navbar = ({ toggle}) => {
           </NavMenu>
           <NavBtn>
             <NavBtnLink
-              to="booking"
-              smooth={true}
+              to="#booking"
+              smooth
               // spy={true}
               duration={500}
               exact="true"
-              offset={-100}
+              offset={0}
             >
               Book a Table
             </NavBtnLink>
           </NavBtn>
-        </NavBarContainer>
+        </NavbarContainer>
       </Nav>
       {/* </IconContext.Provider> */}
     </>

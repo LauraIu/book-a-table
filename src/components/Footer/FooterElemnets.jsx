@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link as LinkScroll } from "react-scroll/modules";
+import { HashLink as Link } from "react-router-hash-link";
 
 export const FooterContainer = styled.div`
   background-color: #170f0b;
@@ -53,7 +53,7 @@ export const FooterLinksItems = styled.div`
 `;
 
 
-export const Logo = styled(LinkScroll)`
+export const Logo = styled(Link)`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -64,6 +64,8 @@ export const Logo = styled(LinkScroll)`
   font-size: 3rem;
 
   font-weight: 800;
+  border-bottom: 1px solid #f0e3d2;
+  margin-bottom: 3rem;
 
   &:hover {
     text-decoration: none;
@@ -85,24 +87,26 @@ export const Subtitle = styled.h3`
 export const Text = styled.p`
   justify-self: center;
   cursor: pointer;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.5rem;
   color: #fab623;
 `;
 
-export const FooterLink = styled(LinkScroll)`
+export const FooterLink = styled(Link)`
   color: #f0e3d2;
   text-decoration: none;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
   cursor: pointer;
 
-  &.active {
+  &:active, :focus {
     font-weight:700;
-    color: #fab623;
+    color: #f0e3d2;
   }
 
   &:hover {
@@ -123,16 +127,11 @@ export const SocialMediaWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   /* max-width: 1024px; */
-  margin: 40px auto 0 auto;
+  margin: 40px auto 40px auto;
 
   /* @media screen and (max-width: 820px) {
     
   } */
-`;
-
-export const WebsiteRights = styled.small`
-  color: #f0e3d2;
-  margin: 32px auto;
 `;
 
 export const SocialIcons = styled.div`
@@ -140,6 +139,8 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
+  padding-top: 2rem;
+  border-top: 1px solid #f0e3d2;
 `;
 
 export const SocialIconLink = styled.a`
@@ -151,4 +152,9 @@ export const SocialIconLink = styled.a`
     transition: all 0.2s ease-in-out;
     color: #fab623;
   }
+`;
+
+export const WebsiteRights = styled.small`
+  color: #f0e3d2;
+  margin: 32px auto;
 `;

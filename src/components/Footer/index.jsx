@@ -32,96 +32,150 @@ const Footer = () => {
   };
 
   return (
-      /* set the icons color */
-      // <IconContext.Provider value={{ color: "#f9f9f9"}}>
-      // </IconContext.Provider>
-      <FooterContainer id="footer">
-        <FooterWrap>
-          <FooterLinksContainer>
+    <FooterContainer id="footer">
+      <FooterWrap>
+        <FooterLinksContainer>
+          <FooterLinksItems>
+            <Logo to="home" onClick={toggleHome}>
+              MammaMia
+              <Subtitle>{"ITALIAN PIZZERIA"}</Subtitle>
+              <Text>{"SINCE 1966"}</Text>
+            </Logo>
+            {/* <FooterLinksItems> */}
+            <FooterLink
+              to="#home"
+              smooth
+              // spy={true}
+              duration={500}
+              exact="true"
+              offset={-100}
+            >
+              Home
+            </FooterLink>
+            <FooterLink
+              to="#about"
+              smooth
+              // spy={true}
+              duration={500}
+              exact="true"
+              offset={80}
+            >
+              About
+            </FooterLink>
+            <FooterLink
+              to="#menu"
+              smooth
+              // spy={true}
+              duration={500}
+              exact="true"
+              offset={0}
+            >
+              Menus
+            </FooterLink>
+            <FooterLink
+              to="#booking"
+              smooth
+              // spy={true}
+              duration={500}
+              exact="true"
+              offset={0}
+            >
+              Booking
+            </FooterLink>
+          </FooterLinksItems>
+
+          {/* <FooterLinksWrapper>
             <FooterLinksItems>
-              <Logo to='home' onClick={toggleHome}>
-                MammaMia
-                <Subtitle>{"ITALIAN PIZZERIA"}</Subtitle>
-                <Text>{"SINCE 1966"}</Text>
-              </Logo>
+              <label htmlFor="user_name">Your Name:</label>
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Name..."
+                style={{
+                  color: "#555",
+                  fontSize: "14px",
+                  marginBottom: "16px",
+                  width: "280px",
+                }}
+              />
+              <label htmlFor="user_mail">Your Email:</label>
+              <input
+                type="email"
+                name="user_mail"
+                placeholder="Email..."
+                style={{
+                  color: "#555",
+                  fontSize: "14px",
+                  marginBottom: "16px",
+                  width: "280px",
+                }}
+              />
+              <label htmlFor="message">Message:</label>
+              <textarea
+                name="message"
+                placeholder="Message..."
+                style={{
+                  color: "#555",
+                  fontSize: "14px",
+                  marginBottom: "16px",
+                  width: "280px",
+                }}
+              />
+              <SubmitButton>Send</SubmitButton>
             </FooterLinksItems>
-            <FooterLinksWrapper>
-              <FooterLinksItems>
-                <FooterLink
-                  to="home"
-                  smooth={true}
-                  // spy={true}
-                  duration={500}
-                  exact="true"
-                  offset={-100}
-                >
-                  Home
-                </FooterLink>
-                <FooterLink
-                  to="about"
-                  smooth={true}
-                  // spy={true}
-                  duration={500}
-                  exact="true"
-                  offset={-100}
-                >
-                  About
-                </FooterLink>
-                <FooterLink
-                  to="menu"
-                  smooth={true}
-                  // spy={true}
-                  duration={500}
-                  
-                  exact="true"
-                  offset={-100}
-                >
-                  Menus
-                </FooterLink>
-                <FooterLink
-                  to="booking"
-                  smooth={true}
-                  // spy={true}
-                  duration={500}
-                  exact="true"
-                  offset={-100}
-                >
-                  Booking
-                </FooterLink>
-              </FooterLinksItems>
-            </FooterLinksWrapper>
-            <FooterLinksWrapper>
-              <FooterLinksItems>
-                <SubmitButton>Send:</SubmitButton>
-              </FooterLinksItems>
-            </FooterLinksWrapper>
-          </FooterLinksContainer>
-          <SocialMedia>
-            <SocialMediaWrap>
-              <SocialIcons>
-                <SocialIconLink href="/" target="_blank" rel="noopener" aria-label="Facebook">
-                  <FaFacebook />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" rel="noopener" aria-label="Instagram">
-                  <FaInstagram />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" rel="noopener" aria-label="YouTube">
-                  <FaYoutube />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" rel="noopener" aria-label="Twitter">
-                  <FaTwitter />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                  <FaLinkedin />
-                </SocialIconLink>
-              </SocialIcons>
-              <WebsiteRights>
-                MammaMia&copy; {new Date().getFullYear()} All rights reserved.
-              </WebsiteRights>
-            </SocialMediaWrap>
-          </SocialMedia>
-        </FooterWrap>
-      </FooterContainer>
+          </FooterLinksWrapper> */}
+        </FooterLinksContainer>
+        <SocialMedia>
+          <SocialMediaWrap>
+            <SocialIcons>
+              <SocialIconLink
+                href="/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Facebook"
+              >
+                <FaFacebook />
+              </SocialIconLink>
+              <SocialIconLink
+                href="/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
+              </SocialIconLink>
+              <SocialIconLink
+                href="/"
+                target="_blank"
+                rel="noopener"
+                aria-label="YouTube"
+              >
+                <FaYoutube />
+              </SocialIconLink>
+              <SocialIconLink
+                href="/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Twitter"
+              >
+                <FaTwitter />
+              </SocialIconLink>
+              <SocialIconLink
+                href="/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin />
+              </SocialIconLink>
+            </SocialIcons>
+            <WebsiteRights>
+              <strong>MammaMia&copy; {new Date().getFullYear()}</strong> All rights reserved. Designed and coded by IuLa
+            </WebsiteRights>
+          </SocialMediaWrap>
+        </SocialMedia>
+      </FooterWrap>
+    </FooterContainer>
   );
 };
 

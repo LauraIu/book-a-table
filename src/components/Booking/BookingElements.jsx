@@ -6,7 +6,7 @@ export const BookingContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
+  min-height: 100vh;
   background: url(${TableImg});
   background-position: bottom;
   background-size: cover;
@@ -42,7 +42,9 @@ export const SubmitButton = styled.button`
 
 export const BookingForm = styled.div`
 width: 300px;
+margin-top:3rem;
 `;
+
 export const Form = styled.div`
   font-weight: 700;
   text-align: center;
@@ -106,6 +108,7 @@ export const ReservationInfo = styled.div`
   text-align: center;
   font-size: 1.5rem;
   padding: 2rem 3.5rem;
+  margin-top:3rem;
   margin-bottom: 1rem;
   color: #f0e3d2;
   background: #0a0904cc;
