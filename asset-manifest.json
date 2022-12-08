@@ -1,25 +1,22 @@
 {
-  "files": {
-    "main.css": "/book-a-table/static/css/main.30642a71.css",
-    "main.js": "/book-a-table/static/js/main.21cc677d.js",
-    "static/media/header.jpeg": "/book-a-table/static/media/header.142564bb67808588bf15.jpeg",
-    "static/media/MammaMia_interior.jpeg": "/book-a-table/static/media/MammaMia_interior.d6e7c3587bb12c94e79e.jpeg",
-    "static/media/MammaMia_cuisine_2.jpeg": "/book-a-table/static/media/MammaMia_cuisine_2.da4d6906be5b20ad17d8.jpeg",
-    "static/media/product4.jpg": "/book-a-table/static/media/product4.65cf58a4992aed2f0b68.jpg",
-    "static/media/product1.jpg": "/book-a-table/static/media/product1.819e9c91bf70eacadc4d.jpg",
-    "static/media/product3.jpg": "/book-a-table/static/media/product3.5938ae0e3e671e60efc1.jpg",
-    "static/media/product2.jpg": "/book-a-table/static/media/product2.999727c6691ddcb6b739.jpg",
-    "static/media/glyphicons-halflings-regular.svg": "/book-a-table/static/media/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg",
-    "static/media/glyphicons-halflings-regular.ttf": "/book-a-table/static/media/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf",
-    "static/media/glyphicons-halflings-regular.woff": "/book-a-table/static/media/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff",
-    "static/media/glyphicons-halflings-regular.eot": "/book-a-table/static/media/glyphicons-halflings-regular.5be1347c682810f199c7.eot",
-    "static/media/glyphicons-halflings-regular.woff2": "/book-a-table/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
-    "index.html": "/book-a-table/index.html",
-    "main.30642a71.css.map": "/book-a-table/static/css/main.30642a71.css.map",
-    "main.21cc677d.js.map": "/book-a-table/static/js/main.21cc677d.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.30642a71.css",
-    "static/js/main.21cc677d.js"
-  ]
+  "main.css": "/portfolio/static/css/main.ed431326.chunk.css",
+  "main.js": "/portfolio/static/js/main.d36012bd.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.d36012bd.chunk.js.map",
+  "static/css/1.e20854ec.chunk.css": "/portfolio/static/css/1.e20854ec.chunk.css",
+  "static/js/1.b28040bf.chunk.js": "/portfolio/static/js/1.b28040bf.chunk.js",
+  "static/js/1.b28040bf.chunk.js.map": "/portfolio/static/js/1.b28040bf.chunk.js.map",
+  "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
+  "runtime~main.js.map": "/portfolio/static/js/runtime~main.ee2a1003.js.map",
+  "static/media/product1.jpg": "/portfolio/static/media/product1.11e105ca.jpg",
+  "static/media/product2.jpg": "/portfolio/static/media/product2.d59c1ef5.jpg",
+  "static/media/pizza_heroBg_96dpi_1920.jpeg": "/portfolio/static/media/pizza_heroBg_96dpi_1920.a2db9a88.jpeg",
+  "static/media/MammaMia_interior.jpeg": "/portfolio/static/media/MammaMia_interior.cc132196.jpeg",
+  "static/media/product3.jpg": "/portfolio/static/media/product3.de1ca1aa.jpg",
+  "static/media/product4.jpg": "/portfolio/static/media/product4.469eb37e.jpg",
+  "static/media/bootstrap.min.css": "/portfolio/static/media/glyphicons-halflings-regular.89889688.svg",
+  "static/css/main.ed431326.chunk.css.map": "/portfolio/static/css/main.ed431326.chunk.css.map",
+  "static/css/1.e20854ec.chunk.css.map": "/portfolio/static/css/1.e20854ec.chunk.css.map",
+  "index.html": "/portfolio/index.html",
+  "precache-manifest.30a24e94a0e0531ba5c3d834ae85ea4b.js": "/portfolio/precache-manifest.30a24e94a0e0531ba5c3d834ae85ea4b.js",
+  "service-worker.js": "/portfolio/service-worker.js"
 }
