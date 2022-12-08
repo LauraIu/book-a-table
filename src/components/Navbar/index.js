@@ -2,21 +2,18 @@ import React from "react";
 // import { IconContext } from "react-icons";
 import { animateScroll as scroll } from "react-scroll/modules";
 import { FaBars } from "react-icons/fa"; /* https://react-icons.github.io/react-icons/search?q=bars*/
+
+import { LogoWrapper, LogoLink, LogoH1, LogoSubtitle, LogoText } from "../../Logo";
 import {
   Nav,
   NavbarContainer,
-  NavLogo,
-  Subtitle,
-  Text,
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
-  NavBtn,
-  NavBtnLink,
+  NavLinks
 } from "./NavbarElements";
 
-const Navbar = ({ toggle}) => {
+const Navbar = ({ toggle }) => {
   // Scrolling back to top
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -29,11 +26,12 @@ const Navbar = ({ toggle}) => {
       {/* On scroll set the Nav background-color to transparent */}
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome}>
-            MammaMia
-          <Subtitle>{"ITALIAN PIZZERIA"}</Subtitle>
-            <Text>{"SINCE 1966"}</Text></NavLogo>
-          
+          <LogoWrapper>
+          <LogoLink to="/" onClick={toggleHome}>
+            <LogoH1>{"MammaMia"}</LogoH1>
+            <LogoSubtitle>{"ITALIAN PIZZERIA"}</LogoSubtitle>
+            <LogoText>{"SINCE 1966"}</LogoText>
+          </LogoLink></LogoWrapper>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -45,21 +43,9 @@ const Navbar = ({ toggle}) => {
                 // spy={true}
                 duration={500}
                 // exact="true"
-                offset={-100}
+                offset={0}
               >
                 Home
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="#about"
-                smooth
-                // spy={true}
-                duration={500}
-                // exact="true"
-                offset={-80}
-              >
-                About
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -71,9 +57,34 @@ const Navbar = ({ toggle}) => {
                 // exact="true"
                 offset={-100}
               >
-                Menus
+                Menu
               </NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks
+                to="#booking"
+                smooth
+                // spy={true}
+                duration={500}
+                // exact="true"
+                offset={-100}
+              >
+                Reservation
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="#about"
+                smooth
+                // spy={true}
+                duration={500}
+                // exact="true"
+                offset={-100}
+              >
+                History
+              </NavLinks>
+            </NavItem>
+            
             <NavItem>
               <NavLinks
                 to="#footer"
@@ -87,7 +98,7 @@ const Navbar = ({ toggle}) => {
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
+          {/* <NavBtn>
             <NavBtnLink
               to="#booking"
               smooth
@@ -98,7 +109,7 @@ const Navbar = ({ toggle}) => {
             >
               Book a Table
             </NavBtnLink>
-          </NavBtn>
+          </NavBtn> */}
         </NavbarContainer>
       </Nav>
       {/* </IconContext.Provider> */}

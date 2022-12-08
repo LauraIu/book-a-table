@@ -21,11 +21,12 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="#home" smooth onClick={toggle}>
             Home
           </SidebarLink>
-          <SidebarLink to="#about" smooth onClick={toggle}>
-            About
-          </SidebarLink>
+          
           <SidebarLink to="#menu" smooth onClick={toggle}>
-            Menus
+            Menu
+          </SidebarLink>
+          <SidebarLink to="#about" smooth onClick={toggle}>
+            History
           </SidebarLink>
           <SidebarLink to="#footer" smooth onClick={toggle}>
             Contact

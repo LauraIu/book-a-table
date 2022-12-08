@@ -4,7 +4,7 @@ import { GlobalStyle } from "./globalStyle.js";
 
 import Navbar from "./components/Navbar/index.js";
 import Sidebar from "./components/Sidebar/index.js";
-import Header from "./components/Header";
+import Hero from "./components/Hero";
 import Introduction from "./components/Introduction";
 import Products from "./components/Products";
 import { productData } from "./components/Products/data.js";
@@ -19,20 +19,21 @@ function App() {
   };
 
   return (
-    <>
+    <main>
       <GlobalStyle />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <Header />
-      <Introduction />
+      <Hero />
+      
       <Products
         heading="The best pizzas ever"
         text="TASTE THE ORIGINAL RECIEP!"
         data={productData}
       />
       <Booking />
+      <Introduction />
       <Footer />
-    </>
+    </main>
   );
 }
 

@@ -7,14 +7,19 @@ export const BookingContainer = styled.section`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
+
   background: url(${TableImg});
   background-position: bottom;
   background-size: cover;
-  background-color: #000;
+  background-color: #170f0b;
 
   padding: 8rem 2rem 8rem 2rem;
   margin: 0rem auto;
+  border-top: 1px solid #f0e3d2;
   border-bottom: 1px solid #f0e3d2;
+
+  box-shadow: 1px 10px 25px 1px #421f11b2, -1px -5px 15px 5px #d7d3d3;
 `;
 
 export const SubmitButton = styled.button`
@@ -26,7 +31,7 @@ export const SubmitButton = styled.button`
   border: 1px solid #f0e3d2;
   border-radius: 2px;
   padding: 0.75rem 1.5rem;
-  margin: 1rem auto;
+  margin: 1rem 0.5rem;
 
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -164,6 +169,11 @@ export const Button = styled.button`
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
+
+  /* @media screen and (min-width: 1500px) {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  } */
 `;
 
 export const Text = styled.p`

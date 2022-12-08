@@ -2,13 +2,10 @@ import styled from "styled-components";
 
 export const MenuContainer = styled.section`
   height: auto;
-  border-top:1px solid #f8f7f0;
+  border-top: 1px solid #f0e3d2;
   border-bottom:1px solid #fab623;
-  /* background-color: #ded0bc; */
-  /* background-color: #f3ebe2; */
   background-color: #efeae4;
-  box-shadow: 1px 10px 25px 1px #451300, -1px -5px 15px 5px #fafafa;
-
+  /* box-shadow: 1px 10px 25px 1px #451300, -1px -5px 15px 5px #fafafa; */
   padding: 5rem;
 `;
 
@@ -20,6 +17,12 @@ export const MenuHeading = styled.h1`
   
   margin-top:4rem;
   padding: 3rem 2rem 0rem 2rem;
+
+  @media screen and (max-width:375px){
+      font-size:2rem;
+      font-weight:800;
+      padding: 3rem 0 0 0;
+    }
 `;
 
 export const MenuSubtitle = styled.p`
@@ -29,6 +32,16 @@ export const MenuSubtitle = styled.p`
   font-weight: 600;
   letter-spacing: 0.25rem;
   color: #170f0b;
+
+  @media screen and (max-width:376px){
+    margin-bottom: 2rem;
+      font-size:1.3rem;
+      letter-spacing: 0.1rem;
+    }
+
+    @media screen and (max-width:420px){
+    margin-bottom: 1rem;
+    }
 `;
 
 export const MenuWrapper = styled.div`
@@ -38,7 +51,7 @@ export const MenuWrapper = styled.div`
   margin: 0 auto 3rem auto;
 
   max-width: 1200px;
-  
+
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -58,6 +71,8 @@ export const MenuCard = styled.div`
   box-shadow: rgba(52, 47, 39, 0.3) 0px 5px 10px,
     rgba(52, 47, 39, 0.3) 0px 3px 5px;
     border-radius: 2px;
+
+    
 `;
 
 export const MenuInfo = styled.div`
@@ -74,7 +89,6 @@ export const MenuInfo = styled.div`
   border-top: 6px double #fab623;
   background: #170f0b;
 
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
 
   &:focus {
@@ -110,10 +124,18 @@ export const MenuTitle = styled.h2`
   font-size: 1.8rem;
   letter-spacing: 0.5px;
   padding-bottom: 1rem;
+
+  /* @media screen and (min-width: 1500px) {
+    font-size:2.5rem;
+  } */
 `;
 
 export const MenuDescription = styled.p`
   margin-bottom: 1rem;
+
+  /* @media screen and (min-width: 1500px) {
+    font-size: 1.8rem;
+  } */
 `;
 
 export const MenuPrice = styled.p`
@@ -121,4 +143,8 @@ export const MenuPrice = styled.p`
   font-size: 1.5rem;
   font-weight: 600;
   color: red;
+
+  /* @media screen and (min-width: 1500px) {
+    font-size: 1.8rem;
+  } */
 `;

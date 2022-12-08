@@ -2,132 +2,109 @@ import styled from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
 
 export const FooterContainer = styled.div`
-  background-color: #170f0b;
-`;
-
-export const FooterWrap = styled.div`
-  padding: 48px 24px;
+  background-color: #fab623;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
 `;
+
+// export const FooterWrap = styled.div`
+//   width: 100%;
+// `;
 
 export const FooterLinksContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-
-  @media screen and (max-width: 820px) {
-    padding-top: 32px;
-  }
-`;
-
-export const FooterLinksWrapper = styled.div`
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  /* @media screen and (max-width: 820px) {
-    
-  } */
+  padding: 16px;
+  width: 100%;
+  background-color: #efeae4;
+
+  @media screen and (max-width: 820px) {
+    padding: 16px;
+  }
 `;
 
 export const FooterLinksItems = styled.div`
   display: flex;
-  flex-direction: column;
-
+  justify-content:space-between;
   align-items: center;
-  margin: 16px;
-  text-align: center;
-  width: 200px;
-  box-sizing: border-box;
-  color: #fff;
+  width: 550px;
+  margin-top: 48px;
+  padding-bottom: 1rem;
 
   @media screen and (max-width: 420px) {
     margin: 0;
-    padding: 10px;
-    width: 100%;
+    /* padding: 10px; */
+    width: 98%;
   }
-`;
-
-
-export const Logo = styled(Link)`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  color: red;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 3rem;
-
-  font-weight: 800;
-  border-bottom: 1px solid #f0e3d2;
-  margin-bottom: 3rem;
-
-  &:hover {
-    text-decoration: none;
-    color: red;
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    /* padding: 10px; */
+    width: 80%;
+    text-align: center;
   }
-`;
-
-export const Subtitle = styled.h3`
-  justify-self: center;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 400;
-  letter-spacing: 0.5rem;
-  color: #fab623;
-  margin-top: 0;
-  margin-bottom: 1rem;
-`;
-
-export const Text = styled.p`
-  justify-self: center;
-  cursor: pointer;
-  margin-bottom: 2rem;
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: 0.5rem;
-  color: #fab623;
 `;
 
 export const FooterLink = styled(Link)`
-  color: #f0e3d2;
+  color: #170f0b;
   text-decoration: none;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 800;
+  font-size: 1.6rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   cursor: pointer;
 
-  &:active, :focus {
-    font-weight:700;
-    color: #f0e3d2;
+  &:active {
+    font-weight: 700;
+    color: #efeae4;
   }
 
   &:hover {
     color: #fab623;
     transition: 0.3s ease-out;
     text-decoration: none;
+    text-shadow: 2px 2px 4px #ffffff82;
+}
+
+  @media screen and (max-width: 768px) {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 0rem;
+    /* width: 80%; */
   }
 `;
 
+export const ContactText = styled.h4`
+  display: flex;
+  text-align: center;
+  /* font-style: italic; */
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-top: 1px solid #170f0b;
+
+  color: #170f0b;
+
+  @media screen and (max-width: 768px) {
+    margin: 0 16px;
+  }
+`;
+//SocialMedia styles
+
 export const SocialMedia = styled.div`
-  max-width: 1024px;
+  /* max-width: 1052px; */
   width: 100%;
 `;
 
 export const SocialMediaWrap = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  /* max-width: 1024px; */
-  margin: 40px auto 40px auto;
+
+  background-color: #efeae4;
 
   /* @media screen and (max-width: 820px) {
     
@@ -138,23 +115,37 @@ export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
-  padding-top: 2rem;
-  border-top: 1px solid #f0e3d2;
+  width: 300px;
+  padding-bottom: 16px;
 `;
 
 export const SocialIconLink = styled.a`
-  color: #f0e3d2;
+  color: #170f0b;
   font-size: 24px;
+  margin: 40px auto;
 
   &:hover {
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
     color: #fab623;
+    text-shadow: 2px 2px 4px #ffffff82;
   }
 `;
 
 export const WebsiteRights = styled.small`
-  color: #f0e3d2;
-  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  /* width:100%; */
+  padding: 1rem 1rem 4rem 1rem;
+  border-top: 1px solid #170f0b;
+  color: #170f0b;
+  /* margin: 32px auto; */
+
+  
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    margin: 0 16px;
+  }
 `;

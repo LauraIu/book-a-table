@@ -81,11 +81,13 @@ const Booking = ({ setSelectedDate }) => {
                 onChange={handleChange}
               />
             </Label>
-
             <DatePickerComponent />
 
             <SubmitButton type="submit" onClick={setSubmitReservation}>
-              Confirm Reservation
+              Submit
+            </SubmitButton>
+            <SubmitButton type="cancel" onClick={setSubmitReservation}>
+              Cancel
             </SubmitButton>
           </Form>
         ) : (
@@ -110,7 +112,7 @@ const Booking = ({ setSelectedDate }) => {
                 {setSelectedDate}
               </BookedData>
               <ButtonWrapper>
-                {/* <Button>Confirm</Button> */}
+                <Button>Confirm</Button>
 
                 <Button>Cancel</Button>
               </ButtonWrapper>
